@@ -51,13 +51,13 @@ Gmail and WhatsApp.
 - `.github/` — code owners, issue forms, the pull request template, CI, and
   Dependabot.
 - `scripts/lint_structured.py` — YAML, JSON, and scaffold checks used by CI.
-- `org/` — roster, reporting lines, and roles. Those files are not written yet.
-- `departments/` — department desks.
-- `hq/` — the owner and Amanda operating layer.
-- `os-queue/` — the shared work queue. Validator tests will live in
-  `os-queue/tests` when the queue exists.
+- `org/` — `roster.json`, `reporting.json`, and one note per role in `roles/`.
+- `departments/` — department charters.
+- `hq/` — the owner and Amanda operating layer, including the HQ snapshot.
+- `os-queue/` — the shared task queue. Validator tests live in `os-queue/tests`
+  and the `tests` CI job runs them.
 - `docs/` — runbooks and decisions that are safe to version.
-- `design/` — design notes for the operating system and the Clay avatar.
+- `design/` — design notes and the selected mocks.
 
 ## How changes flow
 

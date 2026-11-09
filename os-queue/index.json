@@ -1,0 +1,16 @@
+{
+  "schema": "os-queue-index-v1",
+  "as_of": "2026-11-05T13:05:00-05:00",
+  "as_of_label": "as of 1:05 PM ET Nov 5",
+  "path": "/workspace/os-queue",
+  "open": [],
+  "recently_closed": [],
+  "counts": {
+    "open": 0,
+    "queued": 0,
+    "assigned": 0,
+    "in_progress": 0,
+    "blocked": 0
+  },
+  "notes": "Empty index at MVP bootstrap. EXAMPLE-* files are not listed in open."
+}

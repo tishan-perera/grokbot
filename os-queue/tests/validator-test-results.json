@@ -1,0 +1,393 @@
+{
+  "unique_cases": 55,
+  "passed": 55,
+  "failed": 0,
+  "scope": "local changed validator and isolated CLI only; no live authorization/agent/connector tests",
+  "cases": [
+    {
+      "name": "valid_creation",
+      "layer": "local-validator",
+      "expected_valid": true,
+      "actual_valid": true,
+      "pass": true
+    },
+    {
+      "name": "pathlike_id",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "id_trailing_newline",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "filename_mismatch",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "oversized_title",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "blank_title",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "control_in_title",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "oversized_body",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "empty_assignee",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "pathlike_assignee",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "invalid_assignee_type",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "unknown_property",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "unexpected_creator_label",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "missing_owner_label",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "missing_updated_timestamp",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "malformed_date",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "impossible_calendar_date",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "unqualified_local_date",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "future_creation",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "future_update",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "update_before_creation",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "future_deadline_allowed",
+      "layer": "local-validator",
+      "expected_valid": true,
+      "actual_valid": true,
+      "pass": true
+    },
+    {
+      "name": "null_deadline_allowed",
+      "layer": "local-validator",
+      "expected_valid": true,
+      "actual_valid": true,
+      "pass": true
+    },
+    {
+      "name": "too_many_tags",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "empty_history",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "status_without_history",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "valid_assignment",
+      "layer": "local-validator",
+      "expected_valid": true,
+      "actual_valid": true,
+      "pass": true
+    },
+    {
+      "name": "valid_working_transition",
+      "layer": "local-validator",
+      "expected_valid": true,
+      "actual_valid": true,
+      "pass": true
+    },
+    {
+      "name": "queued_to_done",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "valid_blocked",
+      "layer": "local-validator",
+      "expected_valid": true,
+      "actual_valid": true,
+      "pass": true
+    },
+    {
+      "name": "valid_unblock",
+      "layer": "local-validator",
+      "expected_valid": true,
+      "actual_valid": true,
+      "pass": true
+    },
+    {
+      "name": "valid_completion",
+      "layer": "local-validator",
+      "expected_valid": true,
+      "actual_valid": true,
+      "pass": true
+    },
+    {
+      "name": "terminal_reopen",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "action_target_conflict",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "rewritten_previous_history",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "unchanged_replay",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "changed_assignee_in_status_update",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "history_time_regression",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "future_history",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "blank_history_author",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "note_cannot_change_state",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "example_rejected_in_live_mode",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "example_accepted_only_as_sample",
+      "layer": "local-validator",
+      "expected_valid": true,
+      "actual_valid": true,
+      "pass": true
+    },
+    {
+      "name": "real_id_marked_example",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "example_id_missing_flag",
+      "layer": "local-validator",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true
+    },
+    {
+      "name": "text_authority_is_only_data",
+      "layer": "local-validator",
+      "expected_valid": true,
+      "actual_valid": true,
+      "pass": true
+    },
+    {
+      "name": "cli_valid_does_not_authorize_or_write",
+      "layer": "isolated-cli",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "pass": true
+    },
+    {
+      "name": "cli_unknown_field_does_not_echo_value",
+      "layer": "isolated-cli",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "pass": true
+    },
+    {
+      "name": "cli_duplicate_key",
+      "layer": "isolated-cli",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "pass": true
+    },
+    {
+      "name": "cli_nonfinite_json",
+      "layer": "isolated-cli",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "pass": true
+    },
+    {
+      "name": "cli_invalid_json",
+      "layer": "isolated-cli",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "pass": true
+    },
+    {
+      "name": "cli_oversized_input",
+      "layer": "isolated-cli",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "pass": true
+    },
+    {
+      "name": "cli_invalid_utf8",
+      "layer": "isolated-cli",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "pass": true
+    },
+    {
+      "name": "cli_symlink_rejected",
+      "layer": "isolated-cli",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "pass": true
+    },
+    {
+      "name": "cli_authority_text_still_not_authorized",
+      "layer": "isolated-cli",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "pass": true
+    }
+  ]
+}
