@@ -1,0 +1,73 @@
+name: New hire / role request
+description: Propose a new seat, or a change to an existing role.
+title: "role: "
+labels:
+  - role-request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A role request is a proposal. The seat does not exist until Tishan
+        approves it. Do not include a real person's private contact details.
+  - type: input
+    id: role-name
+    attributes:
+      label: Role name
+      description: The seat title, not a private biography.
+      placeholder: Example title
+    validations:
+      required: true
+  - type: dropdown
+    id: department
+    attributes:
+      label: Department
+      options:
+        - Finance
+        - YouTube
+        - AI Ops
+        - Ground floor
+        - HQ
+    validations:
+      required: true
+  - type: dropdown
+    id: reports-to
+    attributes:
+      label: Reports to
+      options:
+        - Tishan (owner)
+        - Amanda (Chief of Staff / COO)
+        - Finance chief
+        - YouTube Chief
+        - AI Ops chief
+        - Mailroom
+        - Storage
+        - Time Master
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this seat is needed
+    validations:
+      required: true
+  - type: textarea
+    id: responsibilities
+    attributes:
+      label: Responsibilities
+      description: What this role does, and which desks it may hand work to.
+    validations:
+      required: true
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: What this role must not access
+      description: Data and tools that stay outside this seat.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Data safety
+      options:
+        - label: This request contains no secrets, message content, contacts, financial data, or private memory.
+          required: true

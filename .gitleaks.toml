@@ -1,0 +1,11 @@
+title = "grokbot"
+
+# Extend the built-in gitleaks rules. .env.example is names only.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Placeholder variable names. This file must never contain values."
+paths = [
+  '''(^|/)\.env\.example$''',
+]

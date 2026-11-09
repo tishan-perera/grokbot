@@ -1,0 +1,46 @@
+name: Task
+description: Planned work for a desk, a document, or the repository.
+title: "task: "
+labels:
+  - task
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the work. Do not include secrets, message content, contacts,
+        financial data, or agent private memory.
+  - type: dropdown
+    id: department
+    attributes:
+      label: Department
+      description: Where the work sits. Use Repository for a change to this repo itself.
+      options:
+        - Finance
+        - YouTube
+        - AI Ops
+        - Ground floor
+        - HQ
+        - Repository
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: What will be true when this task is done.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Constraints, related files, or desks that must be consulted.
+    validations:
+      required: false
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Data safety
+      options:
+        - label: This issue contains no secrets, message content, contacts, financial data, or private memory.
+          required: true

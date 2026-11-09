@@ -1,0 +1,52 @@
+name: Bug
+description: Something in a role, a workflow, or this repository is already wrong.
+title: "bug: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Report the defect without secrets, message content, contacts, financial
+        data, or agent private memory.
+  - type: dropdown
+    id: department
+    attributes:
+      label: Where it shows up
+      options:
+        - Finance
+        - YouTube
+        - AI Ops
+        - Ground floor
+        - HQ
+        - Repository
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected
+      description: What should have happened.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual
+      description: What happened instead. Describe it. Do not paste private data.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: How to reproduce
+      description: Steps another agent can follow.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Data safety
+      options:
+        - label: This report contains no secrets, message content, contacts, financial data, or private memory.
+          required: true
