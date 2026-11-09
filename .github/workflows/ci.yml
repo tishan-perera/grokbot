@@ -79,12 +79,14 @@ jobs:
             exit 0
           fi
           echo "os-queue/tests is present; running validator tests."
-          if [[ -f os-queue/package.json ]]; then
+          if [[ -f os-queue/tests/test_validator.py ]]; then
+            python3 -B os-queue/tests/test_validator.py
+          elif [[ -f os-queue/package.json ]]; then
             npm test --prefix os-queue
           elif [[ -f os-queue/pyproject.toml || -f os-queue/requirements.txt || -f os-queue/requirements-dev.txt ]]; then
             python -m pip install --disable-pip-version-check pytest
             python -m pytest os-queue/tests
           else
-            echo "os-queue/tests exists but no package.json or Python project file was found."
+            echo "os-queue/tests exists but no validator runner was found."
             exit 1
           fi
