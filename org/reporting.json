@@ -1,0 +1,103 @@
+{
+  "schema": "grokbot-org-reporting-v1",
+  "snapshot": {
+    "snapshot_date": "2026-11-05",
+    "snapshot_label": "~3:32 PM ET Nov 5, 2026 (America/New_York)",
+    "note": "HQ Floor snapshot as of this stamp \u2014 not live, not restamped. Statuses and reporting lines are recorded from HQ source revision 6b8310ee (Organization top-down rebuild Nov 8). No statuses invented.",
+    "count_scope_note": "Floor stamp historically said 11 Working \u00b7 6 Waiting \u00b7 3 Closed + Credit Pending excluded. AGENTS array on this snapshot has 11 Working / 6 Waiting / 1 Closed (Prior CoS/HR) / 1 Pending (Credit). Two historical closed Research seats are off the live roster by design; that stamp-vs-roster discrepancy is intentionally preserved."
+  },
+  "edge_count": 17,
+  "notes": [
+    "Edges come only from HQ ORG_PARENT. None fabricated.",
+    "Credit (pending) and Prior CoS/HR (closed) sit outside the active chart with no confirmed reporting edge.",
+    "Gold Temp \u2192 Amanda (not Investments/Trading).",
+    "Playbook \u00b7 Backtester \u2192 Head of Trading."
+  ],
+  "edges": [
+    {
+      "from": "amanda",
+      "to": "owner",
+      "note": null
+    },
+    {
+      "from": "mailroom",
+      "to": "amanda",
+      "note": null
+    },
+    {
+      "from": "gmail",
+      "to": "mailroom",
+      "note": null
+    },
+    {
+      "from": "wa",
+      "to": "mailroom",
+      "note": null
+    },
+    {
+      "from": "chiefyt",
+      "to": "amanda",
+      "note": null
+    },
+    {
+      "from": "ytan",
+      "to": "chiefyt",
+      "note": null
+    },
+    {
+      "from": "script",
+      "to": "chiefyt",
+      "note": null
+    },
+    {
+      "from": "storage",
+      "to": "amanda",
+      "note": null
+    },
+    {
+      "from": "time",
+      "to": "amanda",
+      "note": null
+    },
+    {
+      "from": "inv",
+      "to": "amanda",
+      "note": null
+    },
+    {
+      "from": "goldtemp",
+      "to": "amanda",
+      "note": "Gold Temp reports directly to Amanda per HQ ORG_PARENT (verified Nov 5 role records)"
+    },
+    {
+      "from": "hot",
+      "to": "amanda",
+      "note": null
+    },
+    {
+      "from": "pbt",
+      "to": "hot",
+      "note": "Backtester reports to Head of Trading"
+    },
+    {
+      "from": "rio",
+      "to": "amanda",
+      "note": null
+    },
+    {
+      "from": "lex",
+      "to": "amanda",
+      "note": null
+    },
+    {
+      "from": "ostester",
+      "to": "amanda",
+      "note": null
+    },
+    {
+      "from": "clay",
+      "to": "amanda",
+      "note": null
+    }
+  ]
+}

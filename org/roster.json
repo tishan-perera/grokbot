@@ -1,0 +1,231 @@
+{
+  "schema": "grokbot-org-roster-v1",
+  "snapshot": {
+    "snapshot_date": "2026-11-05",
+    "snapshot_label": "~3:32 PM ET Nov 5, 2026 (America/New_York)",
+    "note": "HQ Floor snapshot as of this stamp \u2014 not live, not restamped. Statuses and reporting lines are recorded from HQ source revision 6b8310ee (Organization top-down rebuild Nov 8). No statuses invented.",
+    "count_scope_note": "Floor stamp historically said 11 Working \u00b7 6 Waiting \u00b7 3 Closed + Credit Pending excluded. AGENTS array on this snapshot has 11 Working / 6 Waiting / 1 Closed (Prior CoS/HR) / 1 Pending (Credit). Two historical closed Research seats are off the live roster by design; that stamp-vs-roster discrepancy is intentionally preserved."
+  },
+  "owner": {
+    "id": "owner",
+    "name": "Tishan",
+    "role": "Owner"
+  },
+  "seats": [
+    {
+      "id": "amanda",
+      "name": "Amanda",
+      "title": "Org lead \u00b7 CoS/COO",
+      "department": "Executive Suite",
+      "floor": "exec",
+      "reports_to": "owner",
+      "status": "Working",
+      "as_of": "~3:05 PM ET Nov 5",
+      "task_sanitized": "CoS/COO coordination \u00b7 Stage 3 build coordination"
+    },
+    {
+      "id": "cos",
+      "name": "Prior CoS/HR",
+      "title": "Prior CoS/HR",
+      "department": "Executive Suite",
+      "floor": "exec",
+      "reports_to": null,
+      "status": "Closed",
+      "as_of": "Unknown",
+      "task_sanitized": "Seat closed"
+    },
+    {
+      "id": "mailroom",
+      "name": "Mail Room Chief",
+      "title": "Mail Room chief",
+      "department": "Ground Floor",
+      "floor": "ground",
+      "reports_to": "amanda",
+      "status": "Waiting",
+      "as_of": "10:17 AM ET Nov 2",
+      "task_sanitized": "[REDACTED payment due notice \u00b7 amount and card brand removed]"
+    },
+    {
+      "id": "gmail",
+      "name": "Gmail",
+      "title": "Inbox cleanup",
+      "department": "Ground Floor",
+      "floor": "ground",
+      "reports_to": "mailroom",
+      "status": "Working",
+      "as_of": "10:18 AM ET Nov 2",
+      "task_sanitized": "Promo inbox cleanup (count omitted)"
+    },
+    {
+      "id": "wa",
+      "name": "WhatsApp",
+      "title": "Group watcher",
+      "department": "Ground Floor",
+      "floor": "ground",
+      "reports_to": "mailroom",
+      "status": "Working",
+      "as_of": "10:17 AM ET Nov 2",
+      "task_sanitized": "Watching assigned groups (contents not stored)"
+    },
+    {
+      "id": "chiefyt",
+      "name": "YouTube Chief",
+      "title": "YouTube Studio chief",
+      "department": "YouTube Studio",
+      "floor": "yt",
+      "reports_to": "amanda",
+      "status": "Waiting",
+      "as_of": "10:17 AM ET Nov 2",
+      "task_sanitized": "TubeAlfred credits + series picks"
+    },
+    {
+      "id": "ytan",
+      "name": "YT Analyst",
+      "title": "Audience analysis",
+      "department": "YouTube Studio",
+      "floor": "yt",
+      "reports_to": "chiefyt",
+      "status": "Waiting",
+      "as_of": "~12:05 PM ET Nov 5",
+      "task_sanitized": "Comment-read paused \u00b7 Phase 1 idle cleanup"
+    },
+    {
+      "id": "script",
+      "name": "Script Writer",
+      "title": "Scripts",
+      "department": "YouTube Studio",
+      "floor": "yt",
+      "reports_to": "chiefyt",
+      "status": "Waiting",
+      "as_of": "10:17 AM ET Nov 2",
+      "task_sanitized": "Needs a premise"
+    },
+    {
+      "id": "storage",
+      "name": "Storage",
+      "title": "Media storage",
+      "department": "Ground Floor",
+      "floor": "ground",
+      "reports_to": "amanda",
+      "status": "Waiting",
+      "as_of": "~12:05 PM ET Nov 5",
+      "task_sanitized": "Media copy complete \u00b7 idle \u00b7 Phase 1 idle cleanup"
+    },
+    {
+      "id": "time",
+      "name": "Time Master",
+      "title": "Time + calendar",
+      "department": "Ground Floor",
+      "floor": "ground",
+      "reports_to": "amanda",
+      "status": "Working",
+      "as_of": "10:17 AM ET Nov 2",
+      "task_sanitized": "Top priorities live \u00b7 calendar-write HOLD"
+    },
+    {
+      "id": "inv",
+      "name": "Investments",
+      "title": "Portfolio (read-only)",
+      "department": "Finance Department",
+      "floor": "finance",
+      "reports_to": "amanda",
+      "status": "Working",
+      "as_of": "10:17 AM ET Nov 2",
+      "task_sanitized": "Read-only portfolio view \u00b7 trades locked"
+    },
+    {
+      "id": "credit",
+      "name": "Credit",
+      "title": "Credit (seat pending)",
+      "department": "Finance Department",
+      "floor": "finance",
+      "reports_to": null,
+      "status": "Pending",
+      "as_of": "Unknown",
+      "task_sanitized": "Credit Pending \u00b7 not hired \u00b7 not in Working/Waiting/Closed counts"
+    },
+    {
+      "id": "goldtemp",
+      "name": "Gold Fundamentals \u00b7 Temp",
+      "title": "Finance temp",
+      "department": "Finance Department",
+      "floor": "finance",
+      "reports_to": "amanda",
+      "status": "Working",
+      "as_of": "~8:43 AM ET Nov 3",
+      "task_sanitized": "Gold fundamentals research (temp through EOD Tue Nov 17)"
+    },
+    {
+      "id": "hot",
+      "name": "Head of Trading",
+      "title": "Day-trade lead \u00b7 Phase 0",
+      "department": "Finance Department",
+      "floor": "finance",
+      "reports_to": "amanda",
+      "status": "Working",
+      "as_of": "~10:14 AM ET Nov 3",
+      "task_sanitized": "Paper week \u00b7 stocks only \u00b7 no live orders"
+    },
+    {
+      "id": "pbt",
+      "name": "Playbook \u00b7 Backtester",
+      "title": "Playbook & backtest \u00b7 Phase 0",
+      "department": "Finance Department",
+      "floor": "finance",
+      "reports_to": "hot",
+      "status": "Working",
+      "as_of": "~10:14 AM ET Nov 3",
+      "task_sanitized": "One stock strategy + paper scorecard"
+    },
+    {
+      "id": "rio",
+      "name": "Rio",
+      "title": "AI Systems lead",
+      "department": "AI Operations",
+      "floor": "ai",
+      "reports_to": "amanda",
+      "status": "Working",
+      "as_of": "~3:05 PM ET Nov 5",
+      "task_sanitized": "Stage 3 tech lead \u00b7 Floor\u2192VO\u2192HQ stamps"
+    },
+    {
+      "id": "lex",
+      "name": "Lex",
+      "title": "Chief Design Engineer",
+      "department": "AI Operations",
+      "floor": "ai",
+      "reports_to": "amanda",
+      "status": "Working",
+      "as_of": "~3:07 PM ET Nov 5",
+      "task_sanitized": "Stage 3 HQ visual slice \u00b7 soft-clay lock held"
+    },
+    {
+      "id": "ostester",
+      "name": "OS Tester",
+      "title": "Solutions architect \u00b7 QA \u00b7 devops",
+      "department": "AI Operations",
+      "floor": "ai",
+      "reports_to": "amanda",
+      "status": "Working",
+      "as_of": "~3:32 PM ET Nov 5",
+      "task_sanitized": "Stage 3 Pass work \u00b7 Lex visual PASS"
+    },
+    {
+      "id": "clay",
+      "name": "Clay Avatar Artist",
+      "title": "Soft-clay avatar production",
+      "department": "AI Operations",
+      "floor": "ai",
+      "reports_to": "amanda",
+      "status": "Waiting",
+      "as_of": "~12:05 PM ET Nov 5",
+      "task_sanitized": "No Live HQ build order \u00b7 soft-clay lock held \u00b7 Phase 1 idle cleanup"
+    }
+  ],
+  "status_counts_from_agents": {
+    "Working": 11,
+    "Waiting": 6,
+    "Closed": 1,
+    "Pending": 1
+  }
+}

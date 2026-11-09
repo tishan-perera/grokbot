@@ -1,0 +1,92 @@
+# Job names are the status checks this repository will require.
+name: CI
+
+"on":
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  secret-scan:
+    name: secret-scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      # Official gitleaks CLI (MIT). The gitleaks GitHub Action needs a
+      # license secret for some private repositories; this job does not.
+      - name: Install gitleaks
+        env:
+          GITLEAKS_VERSION: "8.30.1"
+        run: |
+          set -euo pipefail
+          asset="gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz"
+          base="https://github.com/gitleaks/gitleaks/releases/download/v${GITLEAKS_VERSION}"
+          curl -sSL -o "${asset}" "${base}/${asset}"
+          curl -sSL -o checksums.txt "${base}/gitleaks_${GITLEAKS_VERSION}_checksums.txt"
+          grep " ${asset}$" checksums.txt | sha256sum -c -
+          tar -xzf "${asset}" gitleaks
+          sudo mv gitleaks /usr/local/bin/gitleaks
+          gitleaks version
+
+      - name: Scan git history for secrets
+        run: gitleaks git --config .gitleaks.toml --redact --exit-code 1 .
+
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Lint Markdown
+        uses: DavidAnson/markdownlint-cli2-action@v25
+        with:
+          config: .markdownlint.yaml
+          globs: |
+            **/*.md
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+
+      - name: Validate YAML, JSON, and scaffold invariants
+        run: |
+          python -m pip install --disable-pip-version-check pyyaml
+          python scripts/lint_structured.py
+
+  tests:
+    name: tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Run os-queue validator tests when present
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ ! -d os-queue/tests ]]; then
+            echo "os-queue/tests is absent; skipping validator tests."
+            exit 0
+          fi
+          echo "os-queue/tests is present; running validator tests."
+          if [[ -f os-queue/tests/test_validator.py ]]; then
+            python3 -B os-queue/tests/test_validator.py
+          elif [[ -f os-queue/package.json ]]; then
+            npm test --prefix os-queue
+          elif [[ -f os-queue/pyproject.toml || -f os-queue/requirements.txt || -f os-queue/requirements-dev.txt ]]; then
+            python -m pip install --disable-pip-version-check pytest
+            python -m pytest os-queue/tests
+          else
+            echo "os-queue/tests exists but no validator runner was found."
+            exit 1
+          fi

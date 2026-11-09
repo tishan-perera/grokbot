@@ -1,0 +1,10 @@
+default: true
+MD013: false
+# The imported organization documents keep their original spacing, tables,
+# fences, and links. These rules are presentation-only.
+MD022: false
+MD031: false
+MD032: false
+MD034: false
+MD040: false
+MD060: false
