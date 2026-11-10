@@ -90,3 +90,10 @@ jobs:
             echo "os-queue/tests exists but no validator runner was found."
             exit 1
           fi
+
+      - name: Run close reconciliation assistant tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd projects/close-recon-assistant
+          python3 -B -m unittest discover -s tests -v

@@ -1,0 +1,18 @@
+key,value
+data_origin,SYNTHETIC
+entity_name,Sample Harbor LLC (fictional)
+period,2026-03
+currency,USD
+bank_beginning_balance,20000.00
+book_beginning_balance,20000.00
+bank_balance,18853.94
+book_balance,20557.67
+adjusted_bank_balance,20468.39
+adjusted_book_balance,20468.39
+unexplained_difference,0.00
+proposed_unposted_book_adjustments,-89.28
+journal_entries_posted,0
+llm_enabled,false
+review_pending,19
+overall_status,in progress
+as_of,2026-04-02T15:00:00+00:00

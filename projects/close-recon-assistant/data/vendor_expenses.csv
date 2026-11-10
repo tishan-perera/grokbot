@@ -1,0 +1,13 @@
+expense_id,data_origin,date,vendor_name,description,reference,amount,payment_reference
+E-01,SYNTHETIC,2026-03-05,Harbor Rent Sample,March office rent,INV-RENT-0305,2200.00,CHK-1001
+E-02,SYNTHETIC,2026-03-10,Cloudledger Sample SaaS,Monthly subscription,INV-SAAS-77,89.00,ACH-SUB-77
+E-03,SYNTHETIC,2026-03-21,Sample Legal LLP,Contract review,INV-LEG-221,875.00,CHK-1005
+E-04,SYNTHETIC,2026-03-15,Sample Print Shop,Spring brochures,INV-PRN-88,1250.00,CHK-1006
+E-05,SYNTHETIC,2026-03-30,Sample Utilities Co,Electric and water,INV-UTL-03,640.00,CHK-1008
+E-06,SYNTHETIC,2026-03-31,Sample Courier,Parcel delivery,INV-CRR-19,315.55,CHK-1009
+E-07,SYNTHETIC,2026-03-08,Sample Insurance Mutual,Liability policy installment,INV-INS-9,420.00,ACH-INS-9
+E-08,SYNTHETIC,2026-03-11,Sample Advisory Group,Operations consulting,INV-ADV-14,512.00,
+E-09,SYNTHETIC,2026-03-22,ACME MISC,Team lunch and office pens,,86.40,
+E-10,SYNTHETIC,2026-03-27,XQ-44,Misc,,19.99,
+E-11,SYNTHETIC,2026-03-08,Sample Insurance Mutual,Liability policy installment,INV-INS-9,420.00,ACH-INS-9
+E-12,SYNTHETIC,2026-03-20,Sample Desk Supply,Desk supplies,INV-DSK-04,146.18,CHK-1004
