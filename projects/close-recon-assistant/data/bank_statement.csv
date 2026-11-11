@@ -1,0 +1,18 @@
+line_id,data_origin,date,description,reference,amount
+B-01,SYNTHETIC,2026-03-03,Lockbox sample harbor,AR-4401,4500.00
+B-02,SYNTHETIC,2026-03-05,Check sample harbor rent,CHK-1001,-2200.00
+B-03,SYNTHETIC,2026-03-10,Ach sample saas,ACH-SUB-77,-89.00
+B-04,SYNTHETIC,2026-03-12,Payroll sample run A,PR-2026-03A,-6400.00
+B-05,SYNTHETIC,2026-03-18,Lockbox sample east,AR-4410,1275.40
+B-06,SYNTHETIC,2026-03-20,Check sample desk,CHK-1004,-146.18
+B-07,SYNTHETIC,2026-03-25,Check sample counsel,CHK-1005,-875.00
+B-08,SYNTHETIC,2026-03-30,Lockbox sample west,AR-4422,980.00
+B-09,SYNTHETIC,2026-03-16,Check sample print,CHK-1006,-1255.00
+B-10,SYNTHETIC,2026-03-08,Ach sample insurance draft,ACH-INS-9,-420.00
+B-11,SYNTHETIC,2026-03-08,Ach sample insurance draft,ACH-INS-9,-420.00
+B-12,SYNTHETIC,2026-03-31,Monthly service fee,BANK-FEE,-25.00
+B-13,SYNTHETIC,2026-03-31,Interest credit,BANK-INT,4.12
+B-14,SYNTHETIC,2026-03-12,Ach debit sample advisory,ACH-9F2,-512.00
+B-15,SYNTHETIC,2026-03-07,Lockbox sample south,AR-4408,3000.00
+B-16,SYNTHETIC,2026-03-14,Branch deposit sample,DEP-BATCH-14,1500.00
+B-17,SYNTHETIC,2026-03-19,Pos debit sample mart,,-63.40

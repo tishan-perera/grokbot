@@ -1,0 +1,54 @@
+event_id,at,actor,action,object_type,object_id,decision,rule,confidence,reason
+A-0001,2026-04-02T15:00:00+00:00,system,flag_duplicate,cash_line,B-11,possible_duplicate,duplicate,0.50,B-11 repeats B-10 on the bank side (same amount and reference within 2 days). It was held out of matching.
+A-0002,2026-04-02T15:00:00+00:00,system,match,match,M-01,matched,exact,1.00,"Amount, date, and reference match (AR-4401 / AR-4401)."
+A-0003,2026-04-02T15:00:00+00:00,system,match,match,M-02,matched,exact,1.00,"Amount, date, and reference match (CHK-1001 / CHK-1001)."
+A-0004,2026-04-02T15:00:00+00:00,system,match,match,M-03,matched,exact,1.00,"Amount, date, and reference match (ACH-SUB-77 / ACH-SUB-77)."
+A-0005,2026-04-02T15:00:00+00:00,system,match,match,M-04,matched,exact,1.00,"Amount, date, and reference match (PR-2026-03A / PR-2026-03A)."
+A-0006,2026-04-02T15:00:00+00:00,system,match,match,M-05,matched,exact,1.00,"Amount, date, and reference match (AR-4410 / AR-4410)."
+A-0007,2026-04-02T15:00:00+00:00,system,match,match,M-06,matched,exact,1.00,"Amount, date, and reference match (CHK-1004 / CHK-1004)."
+A-0008,2026-04-02T15:00:00+00:00,system,match,match,M-07,matched,exact,1.00,"Amount, date, and reference match (ACH-INS-9 / ACH-INS-9)."
+A-0009,2026-04-02T15:00:00+00:00,system,match,match,M-08,matched,exact,1.00,"Amount, date, and reference match (AR-4408 / AR-4408)."
+A-0010,2026-04-02T15:00:00+00:00,system,match,match,M-09,matched,amount_ref_date_window,0.95,"Amount and reference match. Dates differ by 4 day(s), inside the 5-day window. Cleared as timing."
+A-0011,2026-04-02T15:00:00+00:00,system,match,match,M-10,matched,amount_ref_date_window,0.95,"Amount and reference match. Dates differ by 2 day(s), inside the 5-day window. Cleared as timing."
+A-0012,2026-04-02T15:00:00+00:00,system,suggest_match,match,M-11,suggested,amount_date_missing_ref,0.70,"Amounts match and the dates are 1 day(s) apart, but the book reference is blank. Not cleared."
+A-0013,2026-04-02T15:00:00+00:00,system,suggest_match,match,M-12,suggested,amount_tolerance_exact_ref,0.62,"Reference CHK-1006 matches and the dates are 1 day(s) apart, but the amounts differ by -5.00 (bank -1255.00, book -1250.00). Possible typo. Not cleared. Vendor expense E-04 matches the book amount -1250.00, not the bank amount."
+A-0014,2026-04-02T15:00:00+00:00,system,suggest_match,match,M-13,suggested,group_sum,0.58,"Bank line B-16 amount 1500.00 equals GL lines G-16, G-17 within 5 days. The references do not match, so this stays a suggestion."
+A-0015,2026-04-02T15:00:00+00:00,system,classify,reconciling_item,R-01,suspected_duplicate,bank,0.50,B-11 repeats B-10 on the bank side (same amount and reference within 2 days). It was held out of matching. The bridge adds the bank line back until a reviewer confirms the repeat. This is not a ledger posting.
+A-0016,2026-04-02T15:00:00+00:00,system,classify,reconciling_item,R-02,deposit_in_transit,bank,0.90,G-09 is on the books and not on the bank. Treated as a deposit in transit.
+A-0017,2026-04-02T15:00:00+00:00,system,classify,reconciling_item,R-03,outstanding_payment,bank,0.90,G-10 is on the books and not on the bank. Treated as an outstanding payment.
+A-0018,2026-04-02T15:00:00+00:00,system,classify,reconciling_item,R-04,outstanding_payment,bank,0.90,G-11 is on the books and not on the bank. Treated as an outstanding payment.
+A-0019,2026-04-02T15:00:00+00:00,system,classify,reconciling_item,R-05,unrecorded_bank_charge,book,0.80,"B-12 looks like a bank fee and is not on the books. Proposed, not posted."
+A-0020,2026-04-02T15:00:00+00:00,system,classify,reconciling_item,R-06,unrecorded_interest,book,0.80,"B-13 looks like interest and is not on the books. Proposed, not posted."
+A-0021,2026-04-02T15:00:00+00:00,system,classify,reconciling_item,R-07,unrecorded_bank_amount,book,0.40,B-17 is on the bank and not on the books. The reason is not identified. Not posted.
+A-0022,2026-04-02T15:00:00+00:00,system,classify,reconciling_item,R-08,proposed_amount_correction,book,0.62,"M-12 differs by -5.00 (bank -1255.00, book -1250.00). The bridge includes that difference as a proposed book correction. Not posted."
+A-0023,2026-04-02T15:00:00+00:00,system,categorize,expense,E-01,suggested,rules,0.95,The vendor or description names rent or a lease.
+A-0024,2026-04-02T15:00:00+00:00,system,categorize,expense,E-02,suggested,rules,0.92,The vendor or description names software or a subscription.
+A-0025,2026-04-02T15:00:00+00:00,system,categorize,expense,E-03,suggested,rules,0.90,The vendor or description names legal or contract-review work.
+A-0026,2026-04-02T15:00:00+00:00,system,categorize,expense,E-04,suggested,rules,0.84,The vendor or description names print or marketing material.
+A-0027,2026-04-02T15:00:00+00:00,system,categorize,expense,E-05,suggested,rules,0.93,The vendor or description names a utility.
+A-0028,2026-04-02T15:00:00+00:00,system,categorize,expense,E-06,suggested,rules,0.88,The vendor or description names delivery or postage.
+A-0029,2026-04-02T15:00:00+00:00,system,categorize,expense,E-07,suggested,rules,0.93,The vendor or description names an insurance policy or premium.
+A-0030,2026-04-02T15:00:00+00:00,system,categorize,expense,E-08,needs_review,rules,0.72,"Consulting and advisory wording is vague, so confidence stays under the review threshold."
+A-0031,2026-04-02T15:00:00+00:00,system,categorize,expense,E-09,needs_review,rules,0.45,"Rules disagreed: Office supplies (0.86) and Meals (0.80). The margin is under 0.15, so this stays in review."
+A-0032,2026-04-02T15:00:00+00:00,system,categorize,expense,E-10,needs_review,rules,0.20,No keyword rule matched the vendor or description.
+A-0033,2026-04-02T15:00:00+00:00,system,categorize,expense,E-11,needs_review,rules,0.93,"The vendor or description names an insurance policy or premium. Possible duplicate of E-07: same date, vendor, amount, and reference."
+A-0034,2026-04-02T15:00:00+00:00,system,categorize,expense,E-12,suggested,rules,0.86,The description names office supplies.
+A-0035,2026-04-02T15:00:00+00:00,system,route_review,review_item,MATCH-M-11,pending,suggested_match,0.70,M-11 amount_date_missing_ref bank B-14 to book G-14
+A-0036,2026-04-02T15:00:00+00:00,system,route_review,review_item,MATCH-M-12,pending,suggested_match,0.62,M-12 amount_tolerance_exact_ref bank B-09 to book G-12
+A-0037,2026-04-02T15:00:00+00:00,system,route_review,review_item,MATCH-M-13,pending,suggested_match,0.58,"M-13 group_sum bank B-16 to book G-16, G-17"
+A-0038,2026-04-02T15:00:00+00:00,system,route_review,review_item,DUP-bank-B-11,pending,duplicate,0.50,Possible duplicate B-11 of B-10 on the bank side
+A-0039,2026-04-02T15:00:00+00:00,system,route_review,review_item,JE-R-05,pending,journal,0.80,unrecorded_bank_charge B-12 -25.00
+A-0040,2026-04-02T15:00:00+00:00,system,route_review,review_item,JE-R-06,pending,journal,0.80,unrecorded_interest B-13 4.12
+A-0041,2026-04-02T15:00:00+00:00,system,route_review,review_item,JE-R-07,pending,journal,0.40,unrecorded_bank_amount B-17 -63.40
+A-0042,2026-04-02T15:00:00+00:00,system,route_review,review_item,CAT-E-01,pending,category,0.95,E-01 suggested Rent and occupancy
+A-0043,2026-04-02T15:00:00+00:00,system,route_review,review_item,CAT-E-02,pending,category,0.92,E-02 suggested Software
+A-0044,2026-04-02T15:00:00+00:00,system,route_review,review_item,CAT-E-03,pending,category,0.90,E-03 suggested Professional services
+A-0045,2026-04-02T15:00:00+00:00,system,route_review,review_item,CAT-E-04,pending,category,0.84,E-04 suggested Marketing
+A-0046,2026-04-02T15:00:00+00:00,system,route_review,review_item,CAT-E-05,pending,category,0.93,E-05 suggested Utilities
+A-0047,2026-04-02T15:00:00+00:00,system,route_review,review_item,CAT-E-06,pending,category,0.88,E-06 suggested Delivery
+A-0048,2026-04-02T15:00:00+00:00,system,route_review,review_item,CAT-E-07,pending,category,0.93,E-07 suggested Insurance
+A-0049,2026-04-02T15:00:00+00:00,system,route_review,review_item,CAT-E-08,pending,category,0.72,E-08 suggested Professional services
+A-0050,2026-04-02T15:00:00+00:00,system,route_review,review_item,CAT-E-09,pending,category,0.45,E-09 suggested Office supplies
+A-0051,2026-04-02T15:00:00+00:00,system,route_review,review_item,CAT-E-10,pending,category,0.20,E-10 suggested Uncategorized
+A-0052,2026-04-02T15:00:00+00:00,system,route_review,review_item,CAT-E-11,pending,category,0.93,E-11 suggested Insurance
+A-0053,2026-04-02T15:00:00+00:00,system,route_review,review_item,CAT-E-12,pending,category,0.86,E-12 suggested Office supplies

@@ -1,0 +1,22 @@
+record_type,record_id,status,rule,confidence,amount,side,source_ids,requires_approval,posts_journal_entry,reason
+match,M-01,matched,exact,1.00,4500.00,,B-01 G-01,false,false,"Amount, date, and reference match (AR-4401 / AR-4401)."
+match,M-02,matched,exact,1.00,-2200.00,,B-02 G-02,false,false,"Amount, date, and reference match (CHK-1001 / CHK-1001)."
+match,M-03,matched,exact,1.00,-89.00,,B-03 G-03,false,false,"Amount, date, and reference match (ACH-SUB-77 / ACH-SUB-77)."
+match,M-04,matched,exact,1.00,-6400.00,,B-04 G-04,false,false,"Amount, date, and reference match (PR-2026-03A / PR-2026-03A)."
+match,M-05,matched,exact,1.00,1275.40,,B-05 G-05,false,false,"Amount, date, and reference match (AR-4410 / AR-4410)."
+match,M-06,matched,exact,1.00,-146.18,,B-06 G-06,false,false,"Amount, date, and reference match (CHK-1004 / CHK-1004)."
+match,M-07,matched,exact,1.00,-420.00,,B-10 G-13,false,false,"Amount, date, and reference match (ACH-INS-9 / ACH-INS-9)."
+match,M-08,matched,exact,1.00,3000.00,,B-15 G-15,false,false,"Amount, date, and reference match (AR-4408 / AR-4408)."
+match,M-09,matched,amount_ref_date_window,0.95,-875.00,,B-07 G-07,false,false,"Amount and reference match. Dates differ by 4 day(s), inside the 5-day window. Cleared as timing."
+match,M-10,matched,amount_ref_date_window,0.95,980.00,,B-08 G-08,false,false,"Amount and reference match. Dates differ by 2 day(s), inside the 5-day window. Cleared as timing."
+match,M-11,suggested,amount_date_missing_ref,0.70,-512.00,,B-14 G-14,true,false,"Amounts match and the dates are 1 day(s) apart, but the book reference is blank. Not cleared."
+match,M-12,suggested,amount_tolerance_exact_ref,0.62,-1255.00,,B-09 G-12,true,false,"Reference CHK-1006 matches and the dates are 1 day(s) apart, but the amounts differ by -5.00 (bank -1255.00, book -1250.00). Possible typo. Not cleared. Vendor expense E-04 matches the book amount -1250.00, not the bank amount."
+match,M-13,suggested,group_sum,0.58,1500.00,,B-16 G-16 G-17,true,false,"Bank line B-16 amount 1500.00 equals GL lines G-16, G-17 within 5 days. The references do not match, so this stays a suggestion."
+reconciling_item,R-01,suspected_duplicate,bank,0.50,420.00,bank,B-11 B-10,true,false,B-11 repeats B-10 on the bank side (same amount and reference within 2 days). It was held out of matching. The bridge adds the bank line back until a reviewer confirms the repeat. This is not a ledger posting.
+reconciling_item,R-02,deposit_in_transit,bank,0.90,2150.00,bank,G-09,false,false,G-09 is on the books and not on the bank. Treated as a deposit in transit.
+reconciling_item,R-03,outstanding_payment,bank,0.90,-640.00,bank,G-10,false,false,G-10 is on the books and not on the bank. Treated as an outstanding payment.
+reconciling_item,R-04,outstanding_payment,bank,0.90,-315.55,bank,G-11,false,false,G-11 is on the books and not on the bank. Treated as an outstanding payment.
+reconciling_item,R-05,unrecorded_bank_charge,book,0.80,-25.00,book,B-12,true,true,"B-12 looks like a bank fee and is not on the books. Proposed, not posted."
+reconciling_item,R-06,unrecorded_interest,book,0.80,4.12,book,B-13,true,true,"B-13 looks like interest and is not on the books. Proposed, not posted."
+reconciling_item,R-07,unrecorded_bank_amount,book,0.40,-63.40,book,B-17,true,true,B-17 is on the bank and not on the books. The reason is not identified. Not posted.
+reconciling_item,R-08,proposed_amount_correction,book,0.62,-5.00,book,B-09 G-12,true,true,"M-12 differs by -5.00 (bank -1255.00, book -1250.00). The bridge includes that difference as a proposed book correction. Not posted."

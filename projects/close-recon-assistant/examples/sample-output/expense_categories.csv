@@ -1,0 +1,13 @@
+expense_id,category,confidence,source,needs_review,posted,status,reason
+E-01,Rent and occupancy,0.95,rules,false,false,suggested,The vendor or description names rent or a lease.
+E-02,Software,0.92,rules,false,false,suggested,The vendor or description names software or a subscription.
+E-03,Professional services,0.90,rules,false,false,suggested,The vendor or description names legal or contract-review work.
+E-04,Marketing,0.84,rules,false,false,suggested,The vendor or description names print or marketing material.
+E-05,Utilities,0.93,rules,false,false,suggested,The vendor or description names a utility.
+E-06,Delivery,0.88,rules,false,false,suggested,The vendor or description names delivery or postage.
+E-07,Insurance,0.93,rules,false,false,suggested,The vendor or description names an insurance policy or premium.
+E-08,Professional services,0.72,rules,true,false,needs_review,"Consulting and advisory wording is vague, so confidence stays under the review threshold."
+E-09,Office supplies,0.45,rules,true,false,needs_review,"Rules disagreed: Office supplies (0.86) and Meals (0.80). The margin is under 0.15, so this stays in review."
+E-10,Uncategorized,0.20,rules,true,false,needs_review,No keyword rule matched the vendor or description.
+E-11,Insurance,0.93,rules,true,false,needs_review,"The vendor or description names an insurance policy or premium. Possible duplicate of E-07: same date, vendor, amount, and reference."
+E-12,Office supplies,0.86,rules,false,false,suggested,The description names office supplies.

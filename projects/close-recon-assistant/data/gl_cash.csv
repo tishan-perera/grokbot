@@ -1,0 +1,18 @@
+line_id,data_origin,date,description,reference,amount,source
+G-01,SYNTHETIC,2026-03-03,Customer receipt sample north,AR-4401,4500.00,AR
+G-02,SYNTHETIC,2026-03-05,Office rent sample harbor,CHK-1001,-2200.00,AP
+G-03,SYNTHETIC,2026-03-10,Software subscription sample,ACH-SUB-77,-89.00,AP
+G-04,SYNTHETIC,2026-03-12,Net payroll sample run A,PR-2026-03A,-6400.00,PAYROLL
+G-05,SYNTHETIC,2026-03-18,Customer receipt sample east,AR-4410,1275.40,AR
+G-06,SYNTHETIC,2026-03-20,Desk supplies sample,CHK-1004,-146.18,AP
+G-07,SYNTHETIC,2026-03-21,Legal invoice sample counsel,CHK-1005,-875.00,AP
+G-08,SYNTHETIC,2026-03-28,Customer receipt sample west,AR-4422,980.00,AR
+G-09,SYNTHETIC,2026-03-31,Customer receipt deposited after cutoff,AR-4430,2150.00,AR
+G-10,SYNTHETIC,2026-03-30,Utilities sample power,CHK-1008,-640.00,AP
+G-11,SYNTHETIC,2026-03-31,Courier sample parcel,CHK-1009,-315.55,AP
+G-12,SYNTHETIC,2026-03-15,Print shop sample brochures,CHK-1006,-1250.00,AP
+G-13,SYNTHETIC,2026-03-08,Insurance draft sample policy,ACH-INS-9,-420.00,AP
+G-14,SYNTHETIC,2026-03-11,Consulting sample advisory,,-512.00,AP
+G-15,SYNTHETIC,2026-03-07,Customer receipt sample south,AR-4408,3000.00,AR
+G-16,SYNTHETIC,2026-03-14,Batch deposit part sample,AR-4414,900.00,AR
+G-17,SYNTHETIC,2026-03-14,Batch deposit part sample,AR-4415,600.00,AR

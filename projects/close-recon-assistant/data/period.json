@@ -1,0 +1,13 @@
+{
+  "data_origin": "SYNTHETIC",
+  "entity_name": "Sample Harbor LLC (fictional)",
+  "period": "2026-03",
+  "period_start": "2026-03-01",
+  "period_end": "2026-03-31",
+  "currency": "USD",
+  "bank_account_label": "Synthetic operating account (no account number)",
+  "gl_cash_account": "1000-CASH-OPERATING",
+  "bank_beginning_balance": "20000.00",
+  "gl_beginning_balance": "20000.00",
+  "prepared_for": "Portfolio demonstration"
+}
