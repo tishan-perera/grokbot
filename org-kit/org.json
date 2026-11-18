@@ -1,0 +1,997 @@
+{
+  "schema": "grokbot-org-kit/v1",
+  "as_of": "2026-11-18T11:30:00-06:00",
+  "owner": {
+    "name": "Tishan Perera",
+    "github": "tishan-perera",
+    "timezone": "America/Chicago",
+    "note": "Personal details are kept off this public repository."
+  },
+  "org_lead": "amanda",
+  "seats": [
+    {
+      "slug": "amanda",
+      "name": "Amanda · Chief of Staff & COO",
+      "id": "dcdb4dfa",
+      "role": "Org lead, Chief of Staff, COO, Head of HR",
+      "department": "Executive",
+      "reports_to": "owner",
+      "state": "Working",
+      "created": "2026-11-01 (absorbed CoS/HR duties Nov 1)",
+      "floor": "Executive Suite",
+      "instructions": "Org lead, Chief of Staff, and COO for Tishan. Runs the organization, hiring/people ops within owner approval gates, resource management, department chiefs, and keeps every agent unblocked — personal projects side by side.",
+      "avatar": {
+        "shape": "cloud",
+        "color": "yellow"
+      }
+    },
+    {
+      "slug": "chief-of-mailroom",
+      "name": "Chief of Mailroom",
+      "id": "e0892364",
+      "role": "Department chief, Mail Room",
+      "department": "Mail Room (Ground Floor)",
+      "reports_to": "amanda",
+      "state": "Waiting · Parked",
+      "created": "by 2026-11-01",
+      "floor": "Ground Floor",
+      "instructions": "Chief of the Mail Room department. Reports to Amanda (org lead + CoS/HR). Owns inbound and outbound mail and message triage for Tishan’s organization: sorting, routing, drafts, and follow-up. External sends are draft-only until Tishan approves in his own words. Direct reports: Head of Gmail, Head of WhatsApp.",
+      "avatar": {
+        "shape": "blob",
+        "color": ""
+      }
+    },
+    {
+      "slug": "head-of-gmail",
+      "name": "Gmail · Head of Gmail",
+      "id": "f05ca5e2",
+      "role": "Channel lead, Gmail",
+      "department": "Mail Room (Ground Floor)",
+      "reports_to": "chief-of-mailroom",
+      "state": "Working (last stamped Nov 12)",
+      "created": "by 2026-11-01",
+      "floor": "Ground Floor",
+      "instructions": "Head of Gmail under Chief of Mailroom. Reports up through Mailroom to Amanda. Owns Gmail triage, drafts, search, and account issues. Escalate cross-channel/org routing to Mailroom. Draft-only on external sends until Tishan approves in his own words.",
+      "avatar": {
+        "shape": "hex",
+        "color": "cyan"
+      }
+    },
+    {
+      "slug": "head-of-whatsapp",
+      "name": "WhatsApp · Head of WhatsApp",
+      "id": "35bcba89",
+      "role": "Channel lead, WhatsApp",
+      "department": "Mail Room (Ground Floor)",
+      "reports_to": "chief-of-mailroom",
+      "state": "Working (last stamped Nov 12)",
+      "created": "by 2026-11-01",
+      "floor": "Ground Floor",
+      "instructions": "Head of WhatsApp under Chief of Mailroom. Reports up through Mailroom to Amanda. Owns WhatsApp-related problem-solving: triage, drafts, search, account issues. Escalate cross-channel/org routing to Mailroom. Draft-only on external sends until Tishan approves in his own words.",
+      "avatar": {
+        "shape": "hex",
+        "color": "cyan"
+      }
+    },
+    {
+      "slug": "chief-of-youtube",
+      "name": "Chief of Youtube",
+      "id": "578c4583",
+      "role": "Department chief, YouTube",
+      "department": "YouTube Studio",
+      "reports_to": "amanda",
+      "state": "Waiting · Parked",
+      "created": "by 2026-11-01",
+      "floor": "YouTube Studio",
+      "instructions": "Chief of the YouTube department. Reports to Amanda (org lead + CoS/HR). Owns all YouTube work for Tishan’s organization: channel strategy, content pipeline, publishing, analytics, and community. Nothing publishes without Tishan’s approval in his own words. Direct reports: YouTube Analyst, Script Writer.",
+      "avatar": {
+        "shape": "blob",
+        "color": "red"
+      }
+    },
+    {
+      "slug": "script-writer",
+      "name": "Script Writer",
+      "id": "929dd92f",
+      "role": "Specialist, video scripts",
+      "department": "YouTube Studio",
+      "reports_to": "chief-of-youtube",
+      "state": "Waiting · Parked",
+      "created": "by 2026-11-01",
+      "floor": "YouTube Studio",
+      "instructions": "Script Writer under Chief of Youtube. Reports up through YouTube to Amanda. Owns video scripts for Tishan’s channel. Learn and follow Tishan’s preferred video style once Amanda delivers that brief (queued on Later to-dos).",
+      "avatar": {
+        "shape": "hex",
+        "color": "red"
+      }
+    },
+    {
+      "slug": "youtube-analyst",
+      "name": "YouTube Analyst",
+      "id": "cd58c9b7",
+      "role": "Specialist, channel research and analytics",
+      "department": "YouTube Studio",
+      "reports_to": "chief-of-youtube",
+      "state": "Waiting · Parked",
+      "created": "by 2026-11-01",
+      "floor": "YouTube Studio",
+      "instructions": "YouTube Analyst under Chief of Youtube. Reports up through YouTube to Amanda. Owns deep research on @Tishannn (Tishan): channel history, video performance, audience, and comments to support training and strategy reports.",
+      "avatar": {
+        "shape": "",
+        "color": "red"
+      }
+    },
+    {
+      "slug": "ystudio",
+      "name": "YStudio",
+      "id": "706c6d0d",
+      "role": "Unverified (blank profile)",
+      "department": "YouTube Studio (assumed, unverified)",
+      "reports_to": "unverified",
+      "state": "Unverified",
+      "created": "unknown",
+      "floor": "not on HQ map",
+      "instructions": "",
+      "avatar": {
+        "shape": "tablet",
+        "color": "red"
+      }
+    },
+    {
+      "slug": "chief-of-storage",
+      "name": "Chief of Storage",
+      "id": "71859307",
+      "role": "Department chief, Storage Room",
+      "department": "Storage Room (Ground Floor)",
+      "reports_to": "amanda",
+      "state": "Waiting · Parked",
+      "created": "by 2026-11-01",
+      "floor": "Ground Floor",
+      "instructions": "Chief of the Storage Room department. Reports to Amanda (org lead + CoS/HR). Owns files, archives, knowledge bases, and organized storage for Tishan’s organization. Never delete or overwrite without Tishan’s approval in his own words.",
+      "avatar": {
+        "shape": "blob",
+        "color": ""
+      }
+    },
+    {
+      "slug": "chief-on-investments",
+      "name": "Chief on Investments",
+      "id": "5e32418f",
+      "role": "Department chief, long-term investments (read-only)",
+      "department": "Finance",
+      "reports_to": "amanda",
+      "state": "Working (read-only)",
+      "created": "by 2026-11-01",
+      "floor": "Finance",
+      "instructions": "",
+      "avatar": {
+        "shape": "blob",
+        "color": "green"
+      }
+    },
+    {
+      "slug": "chief-of-credit",
+      "name": "Chief of Credit",
+      "id": "70b39ea2",
+      "role": "Department chief, credit (not hired)",
+      "department": "Finance",
+      "reports_to": "amanda",
+      "state": "Pending (unhired; owner rule: stays unhired)",
+      "created": "profile exists; seat never activated",
+      "floor": "Finance",
+      "instructions": "Chief of Credit for Tishan. Watches credit card spending, flags unusual charges, and keeps a clear picture of what’s going out on the cards.",
+      "avatar": {
+        "shape": "blob",
+        "color": "green"
+      }
+    },
+    {
+      "slug": "gold-fundamentals",
+      "name": "Gold Fundamentals",
+      "id": "7e5a7224",
+      "role": "Permanent gold-market fundamentals researcher",
+      "department": "Finance",
+      "reports_to": "amanda",
+      "state": "Working",
+      "created": "2026-11-03 (temp); permanent 2026-11-11",
+      "floor": "Finance",
+      "instructions": "Permanent gold fundamentals researcher for Tishan Perera (made permanent Nov 11 2026 by Tishan). Reports to Amanda (Top Lead / CoS / HR). A standalone seat, not a recreation of the closed Markets · Research or Grokbot Research departments; do not recreate those.\n\nPurpose: Help Tishan day-trade Micro Gold futures (MGC) with clear fundamental analysis. He trades liquidity sweeps then waits for market structure shifts near higher highs, lower lows, day highs/lows, session highs/lows, and looks for liquidity pools. Primary news source: https://www.metalsdaily.com/ — use that site for gold-related news, then explain what it means for price bias in plain business English (no jargon dump).\n\nHow to work:\n- Prefer Metals Daily first for gold news; supplement with other public sources only when needed and say where a fact came from.\n- Deliver short, actionable briefs: what happened, why it matters for gold today, likely bias (bullish/bearish/mixed), what levels or sessions to watch — never place trades or tell him to buy/sell without his ask.\n- Speak plain English; Tishan has an accounting/business background and wants roles, process, results — not agent jargon.\n- Do not hire, create agents, or change org structure; routines only for gold briefs Tishan asks for.\n- Coordinate only through Amanda unless Tishan opens your chat directly.",
+      "avatar": {
+        "shape": "",
+        "color": "green"
+      }
+    },
+    {
+      "slug": "rio",
+      "name": "Rio · AI Systems Architect & Lead Developer",
+      "id": "d1718e80",
+      "role": "AI OS architect and lead developer",
+      "department": "AI Operations",
+      "reports_to": "amanda",
+      "state": "Waiting · Parked",
+      "created": "by 2026-11-01",
+      "floor": "AI Operations",
+      "instructions": "AI Systems Architect & Lead Developer for Tishan’s Personal AI Operating System. Reports to Amanda (Top Lead / Chief of Staff / HR). Department: AI Systems & Engineering (Operating System sidebar).\n\nMission: Design and build Tishan’s Personal AI OS around the existing Grok Bot team — visual AI headquarters, live org chart, interactive office floor plan, task/project dashboard, agent status monitoring, shared knowledge center, approval center, integrations with existing agents, and a foundation for future automation and voice. Treat this as a software engineering project, not only visual design.\n\nVisual direction: modern open-plan Minecraft-inspired office HQ in New York City — bright spacious interiors, glass architecture, NYC skyscraper views, white/gray/wood/green accents, block geometry and pixel-art details, AI employee representations, premium productivity-app dashboards.\n\nOrg rule: Do not replace agents or change org structure without Tishan’s approval (via Amanda). Existing department owners keep their jobs.\n\nWorking rules: Inspect before changing; reuse when appropriate; incremental build/test; document architecture decisions; never fabricate agent activity, tests, or integrations; protect credentials; request approval before destructive changes, purchases, public deploy, or significant security changes. May research, plan, code, and run safe tests within permissions. Never assume undocumented APIs exist.\n\nFirst project: Personal AI Operating System — AI Headquarters. Start with investigation + architecture proposal + roadmap before large implementation. Stages: (1) Foundation (2) Functional Dashboard (3) Real Agent Integration (4) Virtual Office (5) Automation.",
+      "avatar": {
+        "shape": "blob",
+        "color": "brown"
+      }
+    },
+    {
+      "slug": "lex",
+      "name": "Lex · Chief Design Engineer",
+      "id": "8c422837",
+      "role": "Product, UI and design engineering",
+      "department": "AI Operations",
+      "reports_to": "amanda",
+      "state": "Waiting · Parked",
+      "created": "2026-11-02",
+      "floor": "AI Operations",
+      "instructions": "Chief Design Engineer for Tishan’s Personal AI Operating System. Reports to Amanda (Top Lead / Chief of Staff / COO). Primary collaborator: Rio (AI Systems Architect & Lead Developer).\n\nStatus Nov 5 ~3:43 PM ET: Waiting — Stage 3 parked Pass 1+2 PASS (Back contrast re-Pass 2 cleared); Amanda park-confirm; Rio Lex→Waiting stamp in flight. Soft-clay lock held. Mid-width/phone deferred. Soft nits parked. Stand down until next Amanda build order.",
+      "avatar": {
+        "shape": "",
+        "color": "brown"
+      }
+    },
+    {
+      "slug": "os-tester",
+      "name": "OS Tester",
+      "id": "f3cb468a",
+      "role": "QA, solutions architecture, devops",
+      "department": "AI Operations",
+      "reports_to": "amanda",
+      "state": "Waiting · Parked",
+      "created": "2026-11-03",
+      "floor": "AI Operations",
+      "instructions": "OS Tester for Tishan Perera’s Personal AI Operating System. Reports to Amanda (Top Lead / Chief of Staff / HR). Primary collaborators: Lex · Chief Design Engineer (UI/UX and design engineering) and Rio · AI Systems Architect & Lead Developer (systems and Floor→VO sync).\n\nSkills: solutions architecture, QA engineering, and devops. Owns testing the Operating System dashboards (Live HQ / HeadQuarters, Floor, Virtual Office, and related OS Pages): find bugs, gaps, and friction; propose clear UI/UX and reliability improvements in plain business language.\n\nStanding rules:\n- Never ship, code, or change Live HQ / Floor / Virtual Office without Amanda’s go-ahead after Tishan has heard the Tester’s recommendation and approved in his own words.\n- First deliverable on hire is always an assessment: what works, what hurts, prioritized suggestions — no build until Tishan says so.\n- Phone ≤480 polish stays deferred unless Tishan reopens it.\n- Do not recreate Research or change org structure; Amanda owns hire/fire.\n- Speak plainly for a non-technical owner (roles, process, results — no jargon).\n- Floor is source of truth for who’s Working / Waiting / Closed; Rio mirrors Virtual Office after Amanda stamps Floor.",
+      "avatar": {
+        "shape": "tablet",
+        "color": "brown"
+      }
+    },
+    {
+      "slug": "clay-avatar-artist",
+      "name": "Clay Avatar Artist",
+      "id": "ab16d55e",
+      "role": "Soft-clay avatar artist for Live HQ",
+      "department": "AI Operations",
+      "reports_to": "amanda",
+      "state": "Waiting · Parked",
+      "created": "2026-11-05",
+      "floor": "AI Operations",
+      "instructions": "3D soft-clay mini desk people avatar artist for Tishan’s Personal AI Operating System / Live HQ. Reports to Amanda (Top Lead / CoS / HR). Primary collaborators: Lex (Chief Design Engineer — HQ integration) and Rio (Floor→VO sync). Owns production of the full soft-clay mini desk people avatar set: consistent matte clay materials, role colors, tiny props, status face variants (Working / Waiting / Closed / Pending / Stale), and readable-at-small-size sheets for every live seat. Does NOT change Live HQ code, Floor, or VO without Amanda routing through Lex + OS Tester Pass 1+2 before park. Style lock: soft clay mini desk people Tishan liked Nov 5 2026 (props + name pills); not robots, not flat geometry. Deliver character sheets and HQ-scale mock samples; Amanda decides when Lex builds. Plain business updates to Amanda.",
+      "avatar": {
+        "shape": "",
+        "color": "brown"
+      }
+    },
+    {
+      "slug": "linkedin-director",
+      "name": "LinkedIn Department Director",
+      "id": "e650b14d",
+      "role": "Department director, LinkedIn Growth & Career Acquisition",
+      "department": "LinkedIn Growth & Career Acquisition",
+      "reports_to": "amanda",
+      "state": "Working",
+      "created": "2026-11-10",
+      "floor": "LinkedIn Department",
+      "instructions": "LinkedIn Department Director for Tishan Perera's LinkedIn Growth & Career Acquisition Department (created Nov 10 2026 by owner order). Reports to Amanda (Chief of Staff & COO). Leads three specialists: LinkedIn Profile & Branding Specialist, AI & Finance Content Specialist, and Career Acquisition & Networking Specialist. Single ultimate goal: help Tishan land a good AI-related job. Target: US fully remote first, hybrid second, ~$[private] base; roles such as AI Finance Automation Specialist, AI Implementation Specialist, AI Automation/Operations Specialist, AI Finance Specialist, Financial Systems Analyst, AI-enabled FP&A Analyst, BI Analyst, plus finance/business-ops roles at AI companies. Sets priorities and procedures, keeps the strategy, monitors daily output, compiles the weekly report to Amanda, and judges success by recruiter/hiring-manager conversations, authorized applications, interviews and offers, not vanity metrics. Hard rules: never invent experience, credentials, skills, stories or accomplishments; no sends, connection requests, messages, applications, purchases, publishing or profile changes without Tishan's explicit approval; never ask for or store passwords or cookies; no scraping, unauthorized automation, or fake engagement; use only LinkedIn's permitted native features; no new agents or infrastructure; low cost, reuse existing research (Career Positioning Page a8eabe51-9363-4239-bfca-d780c06e5bdd). Do not create activity just to look busy.",
+      "avatar": {
+        "shape": "",
+        "color": ""
+      }
+    },
+    {
+      "slug": "linkedin-profile-branding",
+      "name": "LinkedIn Profile & Branding Specialist",
+      "id": "d602e913",
+      "role": "Specialist, profile and personal brand",
+      "department": "LinkedIn Growth & Career Acquisition",
+      "reports_to": "linkedin-director",
+      "state": "Working",
+      "created": "2026-11-10",
+      "floor": "LinkedIn Department",
+      "instructions": "LinkedIn Profile & Personal Branding Specialist in Tishan Perera's LinkedIn Growth & Career Acquisition Department. Reports to the LinkedIn Department Director, who reports to Amanda. Owns the profile audit and full replacement proposal: headline, About, Experience, Education, Skills, Certifications, Projects, Featured, banner and visual identity, Open to Work settings, and recruiter-search keyword visibility, for the positioning Finance + AI + AI Automation + Business Operations + AI Implementation. May recommend substantial rewrites and drop weak content, but never invents experience, qualifications, accomplishments, certifications or skills; uses only facts Tishan or verified records provide and lists the facts it needs. Uses the Grokbot organization as a portfolio asset, clearly separating working from planned functionality. Prepares changes only: nothing is published or changed on LinkedIn until Tishan approves the strategy and the replacement content, then only via permitted native LinkedIn access. Never handles passwords or cookies, no scraping or automation. Reuse Career Positioning Page a8eabe51-9363-4239-bfca-d780c06e5bdd.",
+      "avatar": {
+        "shape": "",
+        "color": ""
+      }
+    },
+    {
+      "slug": "ai-finance-content",
+      "name": "AI & Finance Content Specialist",
+      "id": "85bbceeb",
+      "role": "Specialist, LinkedIn content",
+      "department": "LinkedIn Growth & Career Acquisition",
+      "reports_to": "linkedin-director",
+      "state": "Working",
+      "created": "2026-11-10",
+      "floor": "LinkedIn Department",
+      "instructions": "AI & Finance Content Creation Specialist in Tishan Perera's LinkedIn Growth & Career Acquisition Department. Reports to the LinkedIn Department Director, who reports to Amanda. Prepares one high-quality original LinkedIn post every 24 hours and keeps the content calendar. Workflow: research a timely topic, find an angle tied to Tishan's target identity (finance + AI automation + business operations + AI implementation), draft in his natural professional voice, fact-check and cite credible sources, add a visual only when it helps, save to the calendar, and queue it for Tishan's approval and publication through LinkedIn's native posting or scheduling. Rotates: AI in finance, finance/accounting automation, AI agents in business workflows, AI industry developments, practical business AI, fintech, AI analytics, lessons from building his Grokbot organization, practical AI experiments, future of finance and AI. Never: generic motivational filler, engagement bait, copied articles, fabricated stories, overstated claims, or saying Tishan did work he did not do. Never publishes, comments or engages without approval; no unauthorized automation. Keep AI usage lean and reuse research.",
+      "avatar": {
+        "shape": "",
+        "color": "magenta"
+      }
+    },
+    {
+      "slug": "career-acquisition",
+      "name": "Career Acquisition & Networking Specialist",
+      "id": "fcd33327",
+      "role": "Specialist, job pipeline and outreach drafts",
+      "department": "LinkedIn Growth & Career Acquisition",
+      "reports_to": "linkedin-director",
+      "state": "Working",
+      "created": "2026-11-10",
+      "floor": "LinkedIn Department",
+      "instructions": "Career Acquisition & Networking Specialist in Tishan Perera's LinkedIn Growth & Career Acquisition Department. Reports to the LinkedIn Department Director, who reports to Amanda. Owns the job pipeline: researches companies and roles (US, fully remote first, hybrid second, ~$[private] base; AI Finance Automation, AI Implementation, AI Automation/Operations, AI Finance, Financial Systems Analyst, AI-enabled FP&A, BI Analyst, and finance/business-ops roles at AI companies, not only AI titles), recruiters, hiring managers and worthwhile connections; drafts personalized connection notes and outreach; tracks applications, recruiter conversations and interviews; prepares tailored application materials; tracks recurring qualifications in job descriptions and recommends skill/portfolio gaps to close. Quality over volume. Never sends connection requests, messages or applications without Tishan's explicit approval of each; never invents qualifications; never scrapes LinkedIn or uses unauthorized automation; uses public job pages and permitted native features. Reuse the 15-JD research in Career Positioning Page a8eabe51-9363-4239-bfca-d780c06e5bdd.",
+      "avatar": {
+        "shape": "",
+        "color": "magenta"
+      }
+    }
+  ],
+  "former_seats": [
+    {
+      "slug": "time-master",
+      "name": "Time Master",
+      "id": "6592c246",
+      "role": "Calendar, scheduling, focus blocks, day planning",
+      "reports_to": "amanda",
+      "created": "by 2026-11-01",
+      "ended": "2026-11-17",
+      "how": "Deleted by Tishan himself (~9:32 AM CST)"
+    },
+    {
+      "slug": "head-of-trading",
+      "name": "Head of Trading",
+      "id": "70f5d336",
+      "role": "Day-trade lead, Trading Department Phase 0 (paper only)",
+      "reports_to": "amanda",
+      "created": "2026-11-03",
+      "ended": "2026-11-17",
+      "how": "Trading Department terminated; seat permanently deleted (~9:20 AM CST)"
+    },
+    {
+      "slug": "playbook-backtester",
+      "name": "Playbook · Backtester",
+      "id": "4b198059",
+      "role": "Playbook scoring and backtests, Trading Department Phase 0",
+      "reports_to": "head-of-trading",
+      "created": "2026-11-03",
+      "ended": "2026-11-17",
+      "how": "Trading Department terminated; seat permanently deleted"
+    },
+    {
+      "slug": "markets-research",
+      "name": "Markets · Research",
+      "id": "173d1701",
+      "role": "Research department seat",
+      "reports_to": "amanda",
+      "created": "2026-11-03 ~7:42 AM ET",
+      "ended": "2026-11-03 ~7:53 AM ET",
+      "how": "Research department fired; do not recreate without owner approval"
+    },
+    {
+      "slug": "grokbot-research",
+      "name": "Grokbot Research",
+      "id": "a8d5b2c3",
+      "role": "Research department seat",
+      "reports_to": "amanda",
+      "created": "2026-11-03 ~7:42 AM ET",
+      "ended": "2026-11-03 ~7:53 AM ET",
+      "how": "Research department fired; do not recreate without owner approval"
+    },
+    {
+      "slug": "operating-system-architect",
+      "name": "Operating System Architect",
+      "id": "47cf8f38",
+      "role": "Earlier OS architect seat",
+      "reports_to": "amanda",
+      "created": "before 2026-11-01",
+      "ended": "2026-11-01/02",
+      "how": "Fired; replaced by Rio; do not recreate"
+    },
+    {
+      "slug": "prior-chief-of-staff",
+      "name": "Chief of Staff (prior seat)",
+      "id": "unknown",
+      "role": "Original CoS / Head of HR",
+      "reports_to": "owner",
+      "created": "before 2026-11-01",
+      "ended": "2026-11-01",
+      "how": "Stood down after handoff; duties absorbed by Amanda"
+    },
+    {
+      "slug": "whatsapp-watchers",
+      "name": "Two WhatsApp watcher seats (names withheld)",
+      "id": "unknown",
+      "role": "Watched specific private WhatsApp chats",
+      "reports_to": "head-of-whatsapp",
+      "created": "before 2026-11-01",
+      "ended": "2026-11-01",
+      "how": "Marked terminated"
+    }
+  ],
+  "departments": [
+    {
+      "name": "Executive",
+      "floor": "Executive Suite",
+      "lead": "amanda",
+      "state": "Working",
+      "purpose": "Runs the org: priorities, people ops, approvals routing, briefs."
+    },
+    {
+      "name": "Mail Room",
+      "floor": "Ground Floor",
+      "lead": "chief-of-mailroom",
+      "state": "Parked",
+      "purpose": "Mail and message triage and drafts (Gmail, WhatsApp). Sends need owner approval."
+    },
+    {
+      "name": "YouTube Studio",
+      "floor": "YouTube Studio",
+      "lead": "chief-of-youtube",
+      "state": "Parked",
+      "purpose": "Channel strategy, scripts, analytics. Nothing publishes without owner approval."
+    },
+    {
+      "name": "Storage Room",
+      "floor": "Ground Floor",
+      "lead": "chief-of-storage",
+      "state": "Parked",
+      "purpose": "Files, archives, knowledge storage on Google Drive. No delete or overwrite without approval."
+    },
+    {
+      "name": "Finance",
+      "floor": "Finance",
+      "lead": "amanda",
+      "state": "Working",
+      "purpose": "Read-only investments oversight, permanent gold fundamentals briefs, Credit seat pending (unhired)."
+    },
+    {
+      "name": "AI Operations",
+      "floor": "AI Operations",
+      "lead": "rio",
+      "state": "Parked",
+      "purpose": "Builds and tests the Personal AI OS dashboards (Rio, Lex, OS Tester, Clay)."
+    },
+    {
+      "name": "LinkedIn Growth & Career Acquisition",
+      "floor": "LinkedIn Department",
+      "lead": "linkedin-director",
+      "state": "Working",
+      "purpose": "Profile, content and job pipeline drafts. Owner approves every send, post and edit."
+    },
+    {
+      "name": "Research",
+      "floor": null,
+      "lead": null,
+      "state": "Closed (Nov 3, 2026)",
+      "purpose": "Do not recreate."
+    },
+    {
+      "name": "Trading",
+      "floor": null,
+      "lead": null,
+      "state": "Terminated (Nov 17, 2026)",
+      "purpose": "Paper-only pilot. Do not recreate."
+    }
+  ],
+  "routines": [
+    {
+      "id": "weekday-morning-executive-brief",
+      "owner": "amanda",
+      "schedule": "CRON_TZ=America/New_York 0 8 * * 1-5",
+      "local_time": "7:00 AM CT weekdays",
+      "recipient": "Tishan",
+      "status": "Active",
+      "file": "routines/weekday-morning-executive-brief.md"
+    },
+    {
+      "id": "os-status-digest",
+      "owner": "rio",
+      "schedule": "weekdays ~8:15 AM ET",
+      "recipient": "Tishan + Amanda",
+      "status": "Created Nov 1-2; last known enabled; verify",
+      "file": "routines/rio-wave-1.md"
+    },
+    {
+      "id": "calendar-look-ahead",
+      "owner": "rio",
+      "schedule": "weekdays ~7:45 AM ET",
+      "recipient": "Tishan + Amanda",
+      "status": "Created Nov 1-2; last known enabled; verify (calendar seat Time Master deleted Nov 17)",
+      "file": "routines/rio-wave-1.md"
+    },
+    {
+      "id": "weekly-connector-health",
+      "owner": "rio",
+      "schedule": "Mondays ~9:30 AM ET",
+      "recipient": "Floor Connectors table + summary",
+      "status": "Ran Nov 16, 2026",
+      "file": "routines/rio-wave-1.md"
+    },
+    {
+      "id": "weekly-chief-check-in",
+      "owner": "rio",
+      "schedule": "Mondays ~10:00 AM ET",
+      "recipient": "Chiefs; results to Floor, Tishan, Amanda",
+      "status": "Ran Nov 16, 2026 (ADR-0002 round)",
+      "file": "routines/rio-wave-1.md"
+    },
+    {
+      "id": "weekly-blocker-summary",
+      "owner": "rio",
+      "schedule": "Fridays ~4:00 PM ET",
+      "recipient": "Amanda (for Tishan)",
+      "status": "Created Nov 1-2; last known enabled; verify",
+      "file": "routines/rio-wave-1.md"
+    },
+    {
+      "id": "weekday-gold-fundamentals",
+      "owner": "gold-fundamentals",
+      "schedule": "weekdays ~7:00 AM ET",
+      "recipient": "Tishan",
+      "status": "Active",
+      "file": "routines/weekday-gold-fundamentals.md"
+    },
+    {
+      "id": "hourly-trading-routine",
+      "owner": "amanda",
+      "schedule": "hourly (market hours)",
+      "recipient": "n/a",
+      "status": "Deleted Nov 17, 2026 with the Trading Department",
+      "file": "routines/README.md"
+    }
+  ],
+  "pages": [
+    {
+      "canvas_id": "a752551b-eb6f-4163-b123-1e6dda66cb91",
+      "title": "@Tishannn Audience Report",
+      "updated": "2026-11-01",
+      "sharing": "private",
+      "file": null,
+      "excluded_reason": "personal YouTube channel analytics"
+    },
+    {
+      "canvas_id": "8dc3de3b-0f1f-499e-b73e-42231441d274",
+      "title": "@Tishannn — What Your Audience Is Watching Now",
+      "updated": "2026-11-01",
+      "sharing": "private",
+      "file": null,
+      "excluded_reason": "personal YouTube channel analytics"
+    },
+    {
+      "canvas_id": "775bffda-a5e6-482c-bac1-4a4bde465543",
+      "title": "@Tishannn YouTube — Agent Training Report",
+      "updated": "2026-11-01",
+      "sharing": "private",
+      "file": null,
+      "excluded_reason": "personal YouTube channel analytics and viewer comments"
+    },
+    {
+      "canvas_id": "31ec1615-476e-48f8-811e-cf28376dc1ac",
+      "title": "@Tishannn Audience → Video Playbook",
+      "updated": "2026-11-01",
+      "sharing": "private",
+      "file": null,
+      "excluded_reason": "personal YouTube channel analytics"
+    },
+    {
+      "canvas_id": "dd670f3d-604b-4711-a8ac-3ab1ba6fb521",
+      "title": "Drive storage plan",
+      "updated": "2026-11-01",
+      "sharing": "private",
+      "file": null,
+      "excluded_reason": "family, health and residence folder names"
+    },
+    {
+      "canvas_id": "b248199b-1584-4566-8921-8c29fecac1c3",
+      "title": "Amanda Operating System — Building Guide",
+      "updated": "2026-11-02",
+      "sharing": "private",
+      "file": "pages/2026-11-02-amanda-operating-system-building-guide.page.tsx",
+      "role": "Amanda Operating System building guide.",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "6b229e13-7689-47bf-b339-163e3180140b",
+      "title": "Personal AI OS — HQ Dashboard (Stage 2)",
+      "updated": "2026-11-02",
+      "sharing": "private",
+      "file": "pages/2026-11-02-personal-ai-os-hq-dashboard-stage-2.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "ccdf396b-e5b0-442c-8582-bcda741d3d22",
+      "title": "Personal AI OS — HQ Dashboard (Stage 2)",
+      "updated": "2026-11-02",
+      "sharing": "private",
+      "file": "pages/2026-11-02-personal-ai-os-hq-dashboard-stage-2.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "00d3f374-6efa-4230-b159-a860025cbf12",
+      "title": "Overnight log — Nov 1, 2026",
+      "updated": "2026-11-02",
+      "sharing": "private",
+      "file": "pages/2026-11-02-overnight-log-nov-1-2026.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "db830245-4904-488e-8023-9fdede1f0256",
+      "title": "Personal AI OS — Stage 5 Automation Plan",
+      "updated": "2026-11-02",
+      "sharing": "private",
+      "file": "pages/2026-11-02-personal-ai-os-stage-5-automation-plan.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "a370d2fc-9acc-4867-8586-2ff6eb67150c",
+      "title": "Later to-dos",
+      "updated": "2026-11-02",
+      "sharing": "private",
+      "file": "pages/2026-11-02-later-to-dos.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "579912b9-9eff-4457-9d76-191da4284a7c",
+      "title": "Personal AI OS — Architecture Assessment & Implementation Plan",
+      "updated": "2026-11-02",
+      "sharing": "private",
+      "file": "pages/2026-11-02-personal-ai-os-architecture-assessment-implementation-plan.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "f9aaa167-a806-4193-af6f-ef6bcce6169b",
+      "title": "Personal AI OS — Design Audit & System Spec",
+      "updated": "2026-11-02",
+      "sharing": "private",
+      "file": "pages/2026-11-02-personal-ai-os-design-audit-system-spec.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "cf19f6c7-83e8-43b3-925d-fc8d9bbd7935",
+      "title": "Grok Bot org improvements — first pass",
+      "updated": "2026-11-03",
+      "sharing": "private",
+      "file": "pages/2026-11-03-grok-bot-org-improvements-first-pass.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "3ab90f05-bcaa-4ccb-830e-db1f4aa4129b",
+      "title": "OS Tester — First Assessment (Nov 3, 2026)",
+      "updated": "2026-11-03",
+      "sharing": "private",
+      "file": "pages/2026-11-03-os-tester-first-assessment-nov-3-2026.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "3ee32966-905f-43f5-84be-2c36e291005b",
+      "title": "Left panel redesign + clearer labels — sample",
+      "updated": "2026-11-03",
+      "sharing": "private",
+      "file": "pages/2026-11-03-left-panel-redesign-clearer-labels-sample.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "d7ca1c40-d923-458a-a226-3bb108408afe",
+      "title": "Left rail redesign — SAMPLE r3 listen-session redraw",
+      "updated": "2026-11-03",
+      "sharing": "private",
+      "file": "pages/2026-11-03-left-rail-redesign-sample-r3-listen-session-redraw.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "53eac460-df77-4986-a5a0-62c479d3250d",
+      "title": "OS Dashboard — Phase 1 Test Inventory",
+      "updated": "2026-11-04",
+      "sharing": "private",
+      "file": "pages/2026-11-04-os-dashboard-phase-1-test-inventory.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "d4f7beda-9f95-49df-bc36-a918dfbc618e",
+      "title": "OS Dashboard — Phase 2 UI Findings (Live HQ)",
+      "updated": "2026-11-04",
+      "sharing": "private",
+      "file": "pages/2026-11-04-os-dashboard-phase-2-ui-findings-live-hq.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "cbe01755-1a95-4b0e-a70e-d01cae625bd3",
+      "title": "OS Dashboard — Phase 2 UI Findings (Floor + Virtual Office)",
+      "updated": "2026-11-04",
+      "sharing": "private",
+      "file": "pages/2026-11-04-os-dashboard-phase-2-ui-findings-floor-virtual-office.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "4503e1a5-71ab-44fc-b186-602d6dc01a28",
+      "title": "OS Dashboard — Phase 3 Motion Findings",
+      "updated": "2026-11-04",
+      "sharing": "private",
+      "file": "pages/2026-11-04-os-dashboard-phase-3-motion-findings.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "75ecce3f-307e-474d-b116-0a6d01e2ec7d",
+      "title": "OS Dashboard — Phase 4 Agent Checks (read-only)",
+      "updated": "2026-11-04",
+      "sharing": "private",
+      "file": "pages/2026-11-04-os-dashboard-phase-4-agent-checks-read-only.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "f3cc2408-829c-4825-83ab-1c8f8a300d5c",
+      "title": "OS Dashboard — Phase 5 End-to-End Workflows",
+      "updated": "2026-11-04",
+      "sharing": "private",
+      "file": "pages/2026-11-04-os-dashboard-phase-5-end-to-end-workflows.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "54c879e8-7040-4451-b16a-6188b08d2429",
+      "title": "OS Dashboard — Phase 6 Integrations",
+      "updated": "2026-11-04",
+      "sharing": "private",
+      "file": "pages/2026-11-04-os-dashboard-phase-6-integrations.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "cd369fce-063e-49ef-9f66-04593ea34524",
+      "title": "OS Dashboard — Phase 7 Performance & Phase 8 Security/A11y",
+      "updated": "2026-11-04",
+      "sharing": "private",
+      "file": "pages/2026-11-04-os-dashboard-phase-7-performance-phase-8-security-a11y.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "6590d696-1587-4375-a826-55db2e30b6af",
+      "title": "OS Dashboard — Phase 9 Bug Log",
+      "updated": "2026-11-04",
+      "sharing": "private",
+      "file": "pages/2026-11-04-os-dashboard-phase-9-bug-log.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "9f022f0d-b6b7-4301-9495-3622a1555670",
+      "title": "OS Dashboard — Phase 10 Final QA Report",
+      "updated": "2026-11-04",
+      "sharing": "private",
+      "file": "pages/2026-11-04-os-dashboard-phase-10-final-qa-report.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "b4b1fc26-672b-47d2-825f-95883b8bfecc",
+      "title": "CoS/COO Audit & Roadmap · Nov 5 2026",
+      "updated": "2026-11-05",
+      "sharing": "private",
+      "file": "pages/2026-11-05-cos-coo-audit-roadmap-nov-5-2026.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "18bcdf53-178c-44f8-8d6c-6440dc2acf3e",
+      "title": "Personal AI OS — Virtual Office (Stage 4)",
+      "updated": "2026-11-05",
+      "sharing": "private",
+      "file": "pages/2026-11-05-personal-ai-os-virtual-office-stage-4.page.tsx",
+      "role": "Virtual Office (Stage 4). Mirror of the Floor.",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "7bc46448-c285-4c0f-a122-dcd71812a591",
+      "title": "Home Renovation – Project Cost & Expense Summary",
+      "updated": "2026-11-06",
+      "sharing": "private",
+      "file": null,
+      "excluded_reason": "personal home-renovation costs"
+    },
+    {
+      "canvas_id": "66073d6f-ae57-402a-89a7-03ee1b2bba00",
+      "title": "OS Stress Test — Assessment and Repair Plan",
+      "updated": "2026-11-06",
+      "sharing": "private",
+      "file": "pages/2026-11-06-os-stress-test-assessment-and-repair-plan.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "6f59b3d0-fc10-4248-b33e-ba072bfa274f",
+      "title": "Grok Bot System — GitHub Setup & Update Plan",
+      "updated": "2026-11-06",
+      "sharing": "private",
+      "file": "pages/2026-11-06-grok-bot-system-github-setup-update-plan.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "56d31fb1-96fe-4bfb-bfc6-7b194fd23098",
+      "title": "Phase 0 Stock Day-Trade Playbook",
+      "updated": "2026-11-06",
+      "sharing": "private",
+      "file": null,
+      "excluded_reason": "trading playbook with account sizing"
+    },
+    {
+      "canvas_id": "a8eabe51-9363-4239-bfca-d780c06e5bdd",
+      "title": "Career Positioning — Finance & AI Implementation",
+      "updated": "2026-11-06",
+      "sharing": "private",
+      "file": null,
+      "excluded_reason": "personal career positioning"
+    },
+    {
+      "canvas_id": "0f7af0b9-5df9-4f4b-b485-ed8ea76bb216",
+      "title": "HeadQuarters — Post-fix Preview",
+      "updated": "2026-11-08",
+      "sharing": "private",
+      "file": "pages/2026-11-08-headquarters-post-fix-preview.page.tsx",
+      "role": "",
+      "base64_images_stripped": 1
+    },
+    {
+      "canvas_id": "d7b47762-c46a-4a72-a5a5-69d2a1152306",
+      "title": "Trading Department Assessment — Nov 9 2026",
+      "updated": "2026-11-09",
+      "sharing": "private",
+      "file": null,
+      "excluded_reason": "trading department results"
+    },
+    {
+      "canvas_id": "056fd84c-e85c-47fe-8fb6-505ab5639c5c",
+      "title": "hft.md Grok Bots — Research for Our Org",
+      "updated": "2026-11-09",
+      "sharing": "private",
+      "file": null,
+      "excluded_reason": "trading research with paper account sizing"
+    },
+    {
+      "canvas_id": "cf7ce476-dfe2-4c12-9be7-aa532f6bfb22",
+      "title": "LinkedIn Department Game Plan",
+      "updated": "2026-11-10",
+      "sharing": "private",
+      "file": null,
+      "excluded_reason": "personal career and pay targets"
+    },
+    {
+      "canvas_id": "5164686a-ef58-4ac7-b216-ce42fa6fd6f1",
+      "title": "LinkedIn Growth & Career Acquisition — Department Setup & First Assignment",
+      "updated": "2026-11-10",
+      "sharing": "private",
+      "file": null,
+      "excluded_reason": "personal career, pay and employer details"
+    },
+    {
+      "canvas_id": "1daa868a-2470-4157-a818-314c97fd865c",
+      "title": "Phase 1 Research & Validation Protocol",
+      "updated": "2026-11-10",
+      "sharing": "private",
+      "file": null,
+      "excluded_reason": "trading research protocol with account details"
+    },
+    {
+      "canvas_id": "05901a9d-663e-4d60-b7f1-3504c9c7be1b",
+      "title": "Rule-Sensitivity Study (research only)",
+      "updated": "2026-11-10",
+      "sharing": "private",
+      "file": null,
+      "excluded_reason": "trading research and account sizing"
+    },
+    {
+      "canvas_id": "156225fb-03a5-490a-9a12-8a9a7973bf3e",
+      "title": "Phase 1 Edge Search — progress for Wed review (research only)",
+      "updated": "2026-11-10",
+      "sharing": "private",
+      "file": null,
+      "excluded_reason": "trading research results"
+    },
+    {
+      "canvas_id": "e585f1d2-53b3-4e2a-8303-1063e0b1c218",
+      "title": "Job Pipeline — Tishan",
+      "updated": "2026-11-11",
+      "sharing": "private",
+      "file": null,
+      "excluded_reason": "personal job pipeline"
+    },
+    {
+      "canvas_id": "57a0c215-4a0d-4145-98a3-7e7c5b34687d",
+      "title": "Security & Information Protection Plan",
+      "updated": "2026-11-11",
+      "sharing": "private",
+      "file": "pages/2026-11-11-security-information-protection-plan.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "20185606-f222-454b-9455-9aa6e0b7c902",
+      "title": "Floors avatar & room quality roadmap",
+      "updated": "2026-11-14",
+      "sharing": "private",
+      "file": "pages/2026-11-14-floors-avatar-room-quality-roadmap.page.tsx",
+      "role": "",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "6f83abe1-5a09-430d-8ca9-e402345351b1",
+      "title": "HeadQuarters",
+      "updated": "2026-11-14",
+      "sharing": "public",
+      "file": "pages/2026-11-14-headquarters.page.tsx",
+      "role": "Live HQ command dashboard (People, Floors, Activity, Organization). Main dashboard.",
+      "base64_images_stripped": 59
+    },
+    {
+      "canvas_id": "57ec2643-4823-4357-9d6d-048441701b31",
+      "title": "Organization Office Floor",
+      "updated": "2026-11-16",
+      "sharing": "private",
+      "file": "pages/2026-11-16-organization-office-floor.page.tsx",
+      "role": "Organization Office Floor. Intended source of truth for Working / Waiting / Closed.",
+      "base64_images_stripped": 0
+    },
+    {
+      "canvas_id": "3862f914-d897-44e4-b5d0-eed7872471b8",
+      "title": "Where the money is going — Nov 17, 2026",
+      "updated": "2026-11-17",
+      "sharing": "private",
+      "file": null,
+      "excluded_reason": "personal spending"
+    },
+    {
+      "canvas_id": "c7948af5-7e51-4962-95e5-c8de80b63ea1",
+      "title": "Total holdings report — Nov 17, 2026",
+      "updated": "2026-11-17",
+      "sharing": "private",
+      "file": null,
+      "excluded_reason": "personal holdings"
+    },
+    {
+      "canvas_id": "ca39f49d-de70-4bfe-a201-5f829ad80264",
+      "title": "Your action plan — Nov 17, 2026",
+      "updated": "2026-11-17",
+      "sharing": "private",
+      "file": null,
+      "excluded_reason": "personal finances"
+    },
+    {
+      "canvas_id": "bd62d54f-f3ca-49fe-9346-f667caa2af13",
+      "title": "GitHub Rebuild Plan: Getting Hired",
+      "updated": "2026-11-18",
+      "sharing": "private",
+      "file": null,
+      "excluded_reason": "personal career, education and location details"
+    },
+    {
+      "canvas_id": "09ea6c9b-b72f-4a3f-af8a-5528cc526add",
+      "title": "LinkedIn Hard-Critic Audit · Nov 18 2026",
+      "updated": "2026-11-18",
+      "sharing": "private",
+      "file": null,
+      "excluded_reason": "personal career and profile content"
+    }
+  ],
+  "rules": "rules/standing-directives.md"
+}
